@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Telegram WebApps API</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script> <!--Подключаем скрипт от телеграм-->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script> <!--ГЏГ®Г¤ГЄГ«ГѕГ·Г ГҐГ¬ Г±ГЄГ°ГЁГЇГІ Г®ГІ ГІГҐГ«ГҐГЈГ°Г Г¬-->
 
     <style>
         body {
@@ -41,74 +41,74 @@
     </style>
 
     <script>
-        let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
+        let tg = window.Telegram.WebApp; //ГЇГ®Г«ГіГ·Г ГҐГ¬ Г®ГЎГєГҐГЄГІ webapp ГІГҐГ«ГҐГЈГ°Г Г¬Г 
 
-        tg.expand(); //расширяем на все окно
+        tg.expand(); //Г°Г Г±ГёГЁГ°ГїГҐГ¬ Г­Г  ГўГ±ГҐ Г®ГЄГ­Г®
 
-        //tg.MainButton.text = "Changed Text"; //изменяем текст кнопки
-        //tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
-        //tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
-        //tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
-        //tg.MainButton.setParams({ "color": "#143F6B" }); //так изменяются все параметры
+        //tg.MainButton.text = "Changed Text"; //ГЁГ§Г¬ГҐГ­ГїГҐГ¬ ГІГҐГЄГ±ГІ ГЄГ­Г®ГЇГЄГЁ
+        //tg.MainButton.setText("Changed Text1"); //ГЁГ§Г¬ГҐГ­ГїГҐГ¬ ГІГҐГЄГ±ГІ ГЄГ­Г®ГЇГЄГЁ ГЁГ­Г Г·ГҐ
+        //tg.MainButton.textColor = "#F55353"; //ГЁГ§Г¬ГҐГ­ГїГҐГ¬ Г¶ГўГҐГІ ГІГҐГЄГ±ГІГ  ГЄГ­Г®ГЇГЄГЁ
+        //tg.MainButton.color = "#143F6B"; //ГЁГ§Г¬ГҐГ­ГїГҐГ¬ Г¶ГўГҐГІ ГЎГЅГЄГЈГ°Г ГіГ­Г¤Г  ГЄГ­Г®ГЇГЄГЁ
+        //tg.MainButton.setParams({ "color": "#143F6B" }); //ГІГ ГЄ ГЁГ§Г¬ГҐГ­ГїГѕГІГ±Гї ГўГ±ГҐ ГЇГ Г°Г Г¬ГҐГІГ°Г»
 
-        let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать
+        let btn = document.getElementById("btn"); //ГЇГ®Г«ГіГ·Г ГҐГ¬ ГЄГ­Г®ГЇГЄГі Г±ГЄГ°Г»ГІГј/ГЇГ®ГЄГ Г§Г ГІГј
 
-        btn.addEventListener('click', function () { //вешаем событие на нажатие html-кнопки
-            if (tg.MainButton.isVisible) { //если кнопка показана
-                tg.MainButton.hide() //скрываем кнопку
+        btn.addEventListener('click', function () { //ГўГҐГёГ ГҐГ¬ Г±Г®ГЎГ»ГІГЁГҐ Г­Г  Г­Г Г¦Г ГІГЁГҐ html-ГЄГ­Г®ГЇГЄГЁ
+            if (tg.MainButton.isVisible) { //ГҐГ±Г«ГЁ ГЄГ­Г®ГЇГЄГ  ГЇГ®ГЄГ Г§Г Г­Г 
+                tg.MainButton.hide() //Г±ГЄГ°Г»ГўГ ГҐГ¬ ГЄГ­Г®ГЇГЄГі
             }
-            else { //иначе
-                tg.MainButton.show() //показываем
+            else { //ГЁГ­Г Г·ГҐ
+                tg.MainButton.show() //ГЇГ®ГЄГ Г§Г»ГўГ ГҐГ¬
             }
         });
 
-        //let btnED = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
-        //btnED.addEventListener('click', function () { //вешаем событие на нажатие html-кнопки
-        //    if (tg.MainButton.isActive) { //если кнопка показана
-        //        tg.MainButton.setParams({ "color": "#E0FFFF" }); //меняем цвет
-        //        tg.MainButton.disable() //скрываем кнопку
-        //    }
-        //    else { //иначе
-        //        tg.MainButton.setParams({ "color": "#143F6B" }); //меняем цвет
-        //        tg.MainButton.enable() //показываем
-        //    }
-        //});
+        let btnED = document.getElementById("btnED"); //ГЇГ®Г«ГіГ·Г ГҐГ¬ ГЄГ­Г®ГЇГЄГі Г ГЄГІГЁГўГЁГ°Г®ГўГ ГІГј/Г¤ГҐГ ГЄГІГЁГўГЁГ°Г®ГўГ ГІГј
+        btnED.addEventListener('click', function () { //ГўГҐГёГ ГҐГ¬ Г±Г®ГЎГ»ГІГЁГҐ Г­Г  Г­Г Г¦Г ГІГЁГҐ html-ГЄГ­Г®ГЇГЄГЁ
+            if (tg.MainButton.isActive) { //ГҐГ±Г«ГЁ ГЄГ­Г®ГЇГЄГ  ГЇГ®ГЄГ Г§Г Г­Г 
+                tg.MainButton.setParams({ "color": "#E0FFFF" }); //Г¬ГҐГ­ГїГҐГ¬ Г¶ГўГҐГІ
+                tg.MainButton.disable() //Г±ГЄГ°Г»ГўГ ГҐГ¬ ГЄГ­Г®ГЇГЄГі
+            }
+            else { //ГЁГ­Г Г·ГҐ
+                tg.MainButton.setParams({ "color": "#143F6B" }); //Г¬ГҐГ­ГїГҐГ¬ Г¶ГўГҐГІ
+                tg.MainButton.enable() //ГЇГ®ГЄГ Г§Г»ГўГ ГҐГ¬
+            }
+        });
 
         Telegram.WebApp.onEvent('mainButtonClicked', function () {
             tg.close();
-            //при клике на основную кнопку отправляем данные в строковом виде
+            //ГЇГ°ГЁ ГЄГ«ГЁГЄГҐ Г­Г  Г®Г±Г­Г®ГўГ­ГіГѕ ГЄГ­Г®ГЇГЄГі Г®ГІГЇГ°Г ГўГ«ГїГҐГ¬ Г¤Г Г­Г­Г»ГҐ Гў Г±ГІГ°Г®ГЄГ®ГўГ®Г¬ ГўГЁГ¤ГҐ
         });
 
 
-        //let usercard = document.getElementById("usercard"); //получаем блок usercard
+        //let usercard = document.getElementById("usercard"); //ГЇГ®Г«ГіГ·Г ГҐГ¬ ГЎГ«Г®ГЄ usercard
 
-        //let profName = document.createElement('p'); //создаем параграф
+        //let profName = document.createElement('p'); //Г±Г®Г§Г¤Г ГҐГ¬ ГЇГ Г°Г ГЈГ°Г Гґ
 
         //profName.innerText = `${tg.initDataUnsafe.user.first_name}
 
         //${tg.initDataUnsafe.user.last_name}
         //${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
 
-        ////выдем имя, "фамилию", через тире username и код языка
-        //usercard.appendChild(profName); //добавляем
+        ////ГўГ»Г¤ГҐГ¬ ГЁГ¬Гї, "ГґГ Г¬ГЁГ«ГЁГѕ", Г·ГҐГ°ГҐГ§ ГІГЁГ°ГҐ username ГЁ ГЄГ®Г¤ ГїГ§Г»ГЄГ 
+        //usercard.appendChild(profName); //Г¤Г®ГЎГ ГўГ«ГїГҐГ¬
 
-        //let userid = document.createElement('p'); //создаем еще параграф
-        //userid.innerText = `${tg.initDataUnsafe.user.id}`; //показываем user_id
-        //usercard.appendChild(userid); //добавляем
+        //let userid = document.createElement('p'); //Г±Г®Г§Г¤Г ГҐГ¬ ГҐГ№ГҐ ГЇГ Г°Г ГЈГ°Г Гґ
+        //userid.innerText = `${tg.initDataUnsafe.user.id}`; //ГЇГ®ГЄГ Г§Г»ГўГ ГҐГ¬ user_id
+        //usercard.appendChild(userid); //Г¤Г®ГЎГ ГўГ«ГїГҐГ¬
 
 
-        //работает только в attachment menu
-        // let pic = document.createElement('img'); //создаем img
-        // pic.src = tg.initDataUnsafe.user.photo_url; //задаём src
-        // usercard.appendChild(pic); //добавляем элемент в карточку
+        //Г°Г ГЎГ®ГІГ ГҐГІ ГІГ®Г«ГјГЄГ® Гў attachment menu
+        // let pic = document.createElement('img'); //Г±Г®Г§Г¤Г ГҐГ¬ img
+        // pic.src = tg.initDataUnsafe.user.photo_url; //Г§Г Г¤Г ВёГ¬ src
+        // usercard.appendChild(pic); //Г¤Г®ГЎГ ГўГ«ГїГҐГ¬ ГЅГ«ГҐГ¬ГҐГ­ГІ Гў ГЄГ Г°ГІГ®Г·ГЄГі
     </script>
 </head>
 
 <body>
-    <p>Just textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust text</p> <!--Просто текст для проверки-->
+    <p>Just textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust textJust text</p> <!--ГЏГ°Г®Г±ГІГ® ГІГҐГЄГ±ГІ Г¤Г«Гї ГЇГ°Г®ГўГҐГ°ГЄГЁ-->
 
     
-    <button id="btn" class="button">Show/Hide Main Button</button> <!--Кнопка, чтобы скрыть / показать основную кнопку-->
+    <button id="btn" class="button">Show/Hide Main Button</button> <!--ГЉГ­Г®ГЇГЄГ , Г·ГІГ®ГЎГ» Г±ГЄГ°Г»ГІГј / ГЇГ®ГЄГ Г§Г ГІГј Г®Г±Г­Г®ГўГ­ГіГѕ ГЄГ­Г®ГЇГЄГі-->
     
 </body>
 
